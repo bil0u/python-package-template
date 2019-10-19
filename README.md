@@ -16,10 +16,11 @@ package-name
 
 Available `pipenv run` scripts :
 
-- `app`
-- `build`
-- `deploy-test`
-- `deploy`
+- `app` : runs the application
+- `build` : build the app artifacts
+- `deploy-test` : deploy to [test.pypi](https://test.pypi.org)
+- `deploy` : deploy to [pypi](https://pypi.org)
+- `clean` : clean the artifacts created with the `build` script
 
 ### Requirements
 

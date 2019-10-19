@@ -14,6 +14,7 @@ setuptools.setup(
     url='http://github.com/bil0u/package-name',
     description='package-name description',
     long_description=readme(),
+    long_description_content_type='text/markdown',
     keywords='package-name',
     classifiers=[
         'Development Status :: 3 - Alpha',
@@ -32,5 +33,6 @@ setuptools.setup(
             'package-name=package_name.app:main'
         ],
     },
+    python_requires='>=3.6',
     install_requires=[]
 )
