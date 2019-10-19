@@ -23,13 +23,13 @@ setuptools.setup(
     ],
     license='MIT',
     packages=[
-        'package-name'
+        'package_name'
     ],
     include_package_data=True,
     zip_safe=False,
     entry_points={
         'console_scripts': [
-            'package-name=package-name.app:main'
+            'package-name=package_name.app:main'
         ],
     },
     install_requires=[]
