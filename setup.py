@@ -26,5 +26,10 @@ setuptools.setup(
         'package-name'
     ],
     include_package_data=True,
-    zip_safe=False
+    zip_safe=False,
+    entry_points={
+        'console_scripts': [
+            'package-name=package-name.app:main'
+        ],
+    },
 )
