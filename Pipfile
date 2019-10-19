@@ -12,3 +12,6 @@ python_version = "3.7"
 
 [scripts]
 app = "python3 -m package-name.app"
+build = "python3 setup.py sdist bdist bdist_wheel"
+deploy-test = "twine upload --repository-url https://test.pypi.org/legacy/ dist/*"
+deploy = "twine upload dist/*"
