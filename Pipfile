@@ -11,7 +11,9 @@ verify_ssl = true
 python_version = "3.7"
 
 [scripts]
+install = "pipenv install -e ."
 app = "python3 -m package_name.app"
+test = "pytest"
 build = "python3 setup.py sdist bdist bdist_wheel"
 deploy-test = "twine upload -r testpypi dist/*"
 deploy = "twine upload -r pypi dist/*"

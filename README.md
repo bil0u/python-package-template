@@ -6,7 +6,7 @@
 pip install package-name
 ```
 
-### Use
+### Usage
 
 ```shell script
 package-name
@@ -16,11 +16,13 @@ package-name
 
 Available `pipenv run` scripts :
 
-- `app` : runs the application
-- `build` : build the app artifacts
-- `deploy-test` : deploy to [test.pypi](https://test.pypi.org)
-- `deploy` : deploy to [pypi](https://pypi.org)
-- `clean` : clean the artifacts created with the `build` script
+- `install` - installs the package
+- `app` - runs the application
+- `test` - tests the application with [pytest](https://docs.pytest.org/en/latest/)
+- `build` - build the app artifacts
+- `deploy-test` - deploy to [test.pypi](https://test.pypi.org)
+- `deploy` - deploy to [pypi](https://pypi.org)
+- `clean` - clean the artifacts created with the `build` script
 
 ### Requirements
 
