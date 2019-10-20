@@ -20,9 +20,9 @@ Available `pipenv run` scripts :
 - `app` - runs the application
 - `test` - tests the application with [pytest](https://docs.pytest.org/en/latest/)
 - `build` - build the app artifacts
+- `clean` - clean the artifacts created with the `build` script
 - `deploy-test` - deploy to [test.pypi](https://test.pypi.org)
 - `deploy` - deploy to [pypi](https://pypi.org)
-- `clean` - clean the artifacts created with the `build` script
 
 ### Requirements
 
