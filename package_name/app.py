@@ -4,13 +4,16 @@
 
 # def check_file(extensions: [str] = None):
 #     class FileChecker(argparse.Action):
-#         def __call__(self, parser, namespace, filepath, option_string=None):
-#             print(filepath)
-#             if not os.path.exists(filepath):
-#                 parser.error('file does not exists')
-#             if extensions and filepath.split('.')[-1] not in extensions:
-#                 parser.error(f'file extension not allowed. Choices are \'{", ".join(extensions)}\'')
-#             setattr(namespace, self.dest, filepath)
+#         def __call__(self, parser, namespace, files, option_string=None):
+#             for file in files:
+#                 if not os.path.exists(file):
+#                     parser.error(f'file \'{file}\' does not exists')
+#                 if not extensions:
+#                     continue
+#                 ext = file.split('.')[-1]
+#                 if ext not in extensions:
+#                     parser.error(f'file extension \'{ext}\' not allowed. Choices are \'{", ".join(extensions)}\'')
+#             setattr(namespace, self.dest, files)
 #     return FileChecker
 
 
@@ -25,7 +28,7 @@
 #                          action='store_true', dest='silent',
 #                          help='makes the app completely silent')
 #     app_input.add_argument('files', nargs='+',
-#                            action=check_file(['nzb']), dest='files')
+#                            action=check_file(['nzb']))
 #     return app_input.parse_args()
 
 
